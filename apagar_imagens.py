@@ -1,6 +1,6 @@
 import os
 
-PASTA = "img"  # coloque o nome da pasta das imagens
+PASTA = "img"  
 
 extensoes_para_apagar = (".jpg", ".jpeg", ".png")
 

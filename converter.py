@@ -1,10 +1,9 @@
 import os
 from PIL import Image
 
-# pasta onde estão suas imagens
+
 PASTA_IMAGENS = "img"
 
-# qualidade do webp (0–100)
 QUALIDADE = 80
 
 for arquivo in os.listdir(PASTA_IMAGENS):

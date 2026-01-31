@@ -14,9 +14,11 @@
   <meta property="og:type" content="website" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    
+  <link rel="preload" as="image" href="img/banner.webp">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
 
   <style>
@@ -44,14 +46,14 @@
     </div>
   </header>
 
-  <section class=" bg-[url('img/banner.webp')] h-[500px] bg-cover bg-center w-full bg-no-repeat">
+  <section class=" bg-[url('otimizadas/banner.webp')] h-[500px] bg-cover bg-center w-full bg-no-repeat">
     <div class="bg-black/60 flex flex-col justify-center h-full w-4/4 pl-2 md:pl-10 ">
         <h1 class="text-5xl font-bold">Excelencia em Marmore e Granito</h1>
         <p class="text-xl py-3 font-semibold">transformando seu ambiente com Elegancia e Sofisticação</p>
         <a href="" class="bg-amber-500 p-3 w-max rounded-xl text-black font-semibold">Solicite um Orçamento</a>
     </div>
   </section>
-  <section class="p-3 flex w-full flex flex-col lg:flex-row bg-[url('img/z.webp')] bg-cover bg-center bg-no-repeat md:p-10">
+  <section class="p-3 flex w-full flex flex-col lg:flex-row bg-[url('otimizadas/z.webp')] bg-cover bg-center bg-no-repeat md:p-10">
     <div class="text-black px-4 lg:w-2/4">
         <h1 class="text-4xl font-semibold">Sobre Nós</h1>
         <hr class="border-black w-2/4">
@@ -66,10 +68,10 @@
         </ul>
     </div>
     <div class="w-full flex items-center justify-center p-3 lg:w-2/4">
-        <img class=" rounded-xl border-4 border-yellow-600 border-solid" src="img/imagemmarmores.webp" alt="">
+        <img class=" rounded-xl border-4 border-yellow-600 border-solid" src="otimizadas/imagemmarmores.webp" alt="">
     </div>
   </section>
-  <section class="bg-[url('img/marmorip.webp')] bg-cover bg-center bg-no-repeat w-full flex flex-col items-center p-5">
+  <section class="bg-[url('otimizadas/marmorip.webp')] bg-cover bg-center bg-no-repeat w-full flex flex-col items-center p-5">
     <div class="py-5">
         <h1 class="text-3xl font-semibold">Nosso Serviços</h1>
         <hr>
@@ -77,19 +79,19 @@
     </div>
     <div class="flex flex-col gap-6 w-full  lg:flex-row lg:justify-center">
         <div class="bg-black/60 font-semibold hover:scale-105 transition-transform duration-300">
-            <img class="w-full h-64 object-cover object-center lg:w-64 h-64 rounded-xl" src="img/cozinha.webp" alt="">
+            <img class="w-full h-64 object-cover object-center lg:w-64 h-64 rounded-xl" src="otimizadas/cozinha.webp" alt="">
             <p class="p-1">Cozinha</p>
         </div>
         <div class="bg-black/60 font-semibold hover:scale-105 transition-transform duration-300">
-            <img class="w-full h-64 object-cover object-center lg:w-64 h-64 rounded-xl" src="img/escada.webp" alt="">
+            <img class="w-full h-64 object-cover object-center lg:w-64 h-64 rounded-xl" src="otimizadas/escada.webp" alt="">
             <p class="p-1">Escada</p>
         </div>
         <div class="bg-black/60 font-semibold hover:scale-105 transition-transform duration-300">
-            <img class="w-full h-64 object-cover object-center lg:w-64 h-64 rounded-xl" src="img/banheiro.webp" alt="">
+            <img class="w-full h-64 object-cover object-center lg:w-64 h-64 rounded-xl" src="otimizadas/banheiro.webp" alt="">
             <p class="p-1">Banheiro</p>
         </div>
         <div class="bg-black/60 font-semibold hover:scale-105 transition-transform duration-300">
-            <img class="w-full h-64 object-cover object-center lg:w-64 h-64 rounded-xl" src="img/areagourmet.webp" alt="">
+            <img class="w-full h-64 object-cover object-center lg:w-64 h-64 rounded-xl" src="otimizadas/areagourmet.webp" alt="">
             <p class="p-1">Area Gourmet</p>
         </div>
     </div>
@@ -97,14 +99,14 @@
         <a href="" class="bg-amber-500 p-2 rounded-md px-20 mb-5 text-center text-black font-semibold">Ver Mais</a>
     </div>
   </section>
-  <section class="py-20 bg-[url('img/marmoribd.webp')] overflow-hidden bg-cover bg-center bg-no-repeat w-full px-5">
+  <section class="py-20 bg-[url('otimizadas/marmoribd.webp')] overflow-hidden bg-cover bg-center bg-no-repeat w-full px-5">
         <h2 class="text-center text-3xl font-bold mb-12 text-black/80">O QUE DIZEM SOBRE NÓS</h2>
         <div class="swiper mySwiper max-w-4xl mx-auto px-5 shadow-xl/90">
             <div class="swiper-wrapper">
                 <div class="swiper-slide p-10 rounded-2xl border text-black bg-black/20 bg-cover bg-center">
                     <p class="text-lg italic mb-6">"Fiquei impressionado com o cuidado nos detalhes e o brilho final do granito instalado."</p>
                     <div class="flex items-center gap-4">
-                        <div class="w-12 h-12 bg-[url('img/pessoa2.webp')] bg-center bg-cover rounded-full">
+                        <div class="w-12 h-12 bg-[url('otimizadas/pessoa2.webp')] bg-center bg-cover rounded-full">
                         </div>
                         <div>
                             <p class="font-bold">Mariana Souza</p>
@@ -115,7 +117,7 @@
                 <div class="swiper-slide p-10 rounded-2xl border bg-black/20 text-black">
                     <p class="text-lg italic mb-6">"A equipe foi muito profissional e entregou as soleiras e pias dentro do prazo combinado."</p>
                     <div class="flex items-center gap-4">
-                        <div class="w-12 h-12 bg-[url('img/pessoa1.webp')] bg-center bg-cover rounded-full"></div>
+                        <div class="w-12 h-12 bg-[url('otimizadas/pessoa1.webp')] bg-center bg-cover rounded-full"></div>
                         <div>
                             <p class="font-bold">Ricardo Oliveira</p>
                             <p class="text-sm text-gray-500">Oliveira Transportes e Logística</p>
@@ -125,7 +127,7 @@
                 <div class="swiper-slide p-10 rounded-2xl border bg-black/20 text-black">
                     <p class="text-lg italic mb-6">"Trabalho de altíssima qualidade com cortes precisos e pedras lindíssimas, recomendo muito!"</p>
                     <div class="flex items-center gap-4">
-                        <div class="w-12 h-12 bg-[url('img/pessoa4.webp')] bg-center bg-cover rounded-full"></div>
+                        <div class="w-12 h-12 bg-[url('otimizadas/pessoa4.webp')] bg-center bg-cover rounded-full"></div>
                         <div>
                             <p class="font-bold">Beatriz Cavalcante</p>
                             <p class="text-sm text-gray-500">Bia Doces Gourmet</p>
@@ -135,7 +137,7 @@
                 <div class="swiper-slide p-10 rounded-2xl border bg-black/20 text-black">
                     <p class="text-lg italic mb-6">"Excelente atendimento e instalação rápida, o mármore trouxe um luxo incrível para minha cozinha."</p>
                     <div class="flex items-center gap-4">
-                        <div class="w-12 h-12 bg-[url('img/pessoa3.webp')] bg-center bg-cover rounded-full"></div>
+                        <div class="w-12 h-12 bg-[url('otimizadas/pessoa3.webp')] bg-center bg-cover rounded-full"></div>
                         <div>
                             <p class="font-bold">Thiago Ferreira</p>
                             <p class="text-sm text-gray-500">Ferreira Manutenção Hidráulica</p>
@@ -145,7 +147,7 @@
                 <div class="swiper-slide p-10 rounded-2xl border bg-black/20 text-black">
                     <p class="text-lg italic mb-6">"O acabamento das bancadas ficou impecável, superou todas as minhas expectativas!"</p>
                     <div class="flex items-center gap-4">
-                        <div class="w-12 h-12 bg-[url('img/pessoa5.webp')] bg-center bg-cover rounded-full"></div>
+                        <div class="w-12 h-12 bg-[url('otimizadas/pessoa5.webp')] bg-center bg-cover rounded-full"></div>
                         <div>
                             <p class="font-bold">Letícia Albuquerquea</p>
                             <p class="text-sm text-gray-500">Consultoria Jurídica</p>
@@ -156,7 +158,7 @@
             <div class="swiper-pagination"></div>
         </div>
     </section>
-    <section class="bg-[url('img/marmorip.webp')] bg-cover bg-top p-5 lg:flex">
+    <section class="bg-[url('otimizadas/marmorip.webp')] bg-cover bg-top p-5 lg:flex">
         <div class=" w-full">
             <div class="flex flex-col items-center">
                 <h1 class="text-3xl font-semibold">Entre em Contato</h1>
