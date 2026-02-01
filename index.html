@@ -65,7 +65,7 @@
     <div class="bg-black/60 flex flex-col justify-center h-full w-4/4 pl-2 md:pl-10 ">
         <h1 class="text-5xl font-bold">Excelencia em Marmore e Granito</h1>
         <p class="text-xl py-3 font-semibold">transformando seu ambiente com Elegancia e Sofisticação</p>
-        <a href="" class="bg-amber-500 p-3 w-max rounded-xl text-black font-semibold">Solicite um Orçamento</a>
+        <a href="contato.html" class="bg-amber-500 p-3 w-max rounded-xl text-black font-semibold">Solicite um Orçamento</a>
     </div>
   </section>
   <section class="p-3 flex w-full flex flex-col lg:flex-row bg-[url('otimizadas/z.webp')] bg-cover bg-center bg-no-repeat md:p-10">
@@ -81,6 +81,9 @@
             <li><i class="fa-solid fa-circle-check fa-4xs" style="color: #F59E0B;"></i> Equipe Especializada</li>
             <li><i class="fa-solid fa-circle-check fa-4xs" style="color: #F59E0B;"></i> Atendimento Personalizado</li>
         </ul>
+        <div class="my-3">
+            <a href="sobre.html" class="bg-amber-500 p-3 w-max rounded-xl text-black font-semibold" >Ver Sobre Nós</a>
+        </div>
     </div>
     <div class="w-full flex items-center justify-center p-3 lg:w-2/4">
         <img class=" rounded-xl border-4 border-yellow-600 border-solid" src="otimizadas/imagemmarmores.webp" alt="" loading="lazy">
@@ -111,7 +114,7 @@
         </div>
     </div>
     <div class="py-10">
-        <a href="" class="bg-amber-500 p-2 rounded-md px-20 mb-5 text-center text-black font-semibold">Ver Mais</a>
+        <a href="servicos.html" class="bg-amber-500 p-2 rounded-md px-20 mb-5 text-center text-black font-semibold">Ver Mais</a>
     </div>
   </section>
   <section class="py-20 bg-[url('otimizadas/marmoribd.webp')] overflow-hidden bg-cover bg-center bg-no-repeat w-full px-5">
@@ -201,6 +204,9 @@
             <i class="fa-brands fa-whatsapp text-xl"></i>
             ENVIAR PELO WHATSAPP
           </button>
+          <div>
+            <a href="brancos.html" class="bg-transparent p-4 w-full rounded-lg text-white font-semibold flex items-center justify-center uppercase border-2 border-amber-500"><i class="fa-solid fa-book-bookmark pr-1" style="color: white;"></i>Ver Catalogo</a>
+        </div>
         </form>
         <div class="flex flex-col text-md font-semibold p-5 w-full">
             <div class="bg-gradient-to-r from-black/70 to-black/0 p-5 border-b-2">
@@ -215,6 +221,15 @@
                 <p><i class="fa-solid fa-map-location-dot" style="color: #F59E0B;"></i> Endereço:</p>
                 <p class="pl-5"> rua tavaras, 89</p>
             </div>
+            <div class="w-full h-48 rounded-2xl overflow-hidden shadow-lg border border-gray-200 mt-3">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14639.637384073385!2d-46.533382!3d-23.46356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef51887776685%3a0x2984170781129118!2sGuarulhos%2c%20SP!5e0!3m2!1spt-BR!2sbr!4v1707811291184!5m2!1spt-BR!2sbr" 
+                class="w-full h-full border-0" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
         </div>
     </section>
     <footer>
@@ -260,8 +275,9 @@ document.getElementById('btnEnviar').addEventListener('click', function() {
         
         window.open(url, '_blank');
     });
-
-    const btnCatalogo = document.getElementById('btn-catalogo');
+    </script>
+    <script>
+        const btnCatalogo = document.getElementById('btn-catalogo');
     const dropdownMenu = document.getElementById('dropdown-menu');
     const seta = document.getElementById('seta-catalogo');
 
@@ -280,6 +296,5 @@ document.getElementById('btnEnviar').addEventListener('click', function() {
     }
   });
     </script>
-
 </body>
 </html>

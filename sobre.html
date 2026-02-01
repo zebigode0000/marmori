@@ -136,5 +136,25 @@
 
   </div>
 </section>
+<script>
+  const btnCatalogo = document.getElementById('btn-catalogo');
+    const dropdownMenu = document.getElementById('dropdown-menu');
+    const seta = document.getElementById('seta-catalogo');
+
+  
+  btnCatalogo.addEventListener('click', function(event) {
+    event.stopPropagation(); 
+    dropdownMenu.classList.toggle('hidden');
+    seta.classList.toggle('rotate-180');
+  });
+
+  
+  window.addEventListener('click', function(event) {
+    if (!btnCatalogo.contains(event.target)) {
+      dropdownMenu.classList.add('hidden');
+      seta.classList.remove('rotate-180');
+    }
+  });
+</script>
 </body>
 </html>
