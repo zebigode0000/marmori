@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Marmoraria Premium | Mármore e Granito em Guarulhos</title>
+  
+  <link rel="preload" as="image" href="otimizadas/banner.webp" fetchpriority="high">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com?minify=true"></script>
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+<body>
+    <header class="bg-black/80 fixed w-full z-50 backdrop-blur-sm">
+  <div class="max-w-7xl mx-auto flex items-center justify-between p-4">
+    <h1 class="text-xl font-bold text-amber-500 uppercase tracking-tighter">Marmoraria</h1>
+    
+    <nav class="hidden md:flex gap-6 text-sm font-semibold text-white items-center">
+  <a href="index.html" class="hover:text-amber-500 transition">Início</a>
+  <a href="sobre.html" class="hover:text-amber-500 transition">Sobre</a>
+  <a href="servicos.html" class="hover:text-amber-500 transition">Serviços</a>
+  
+  <div class="relative">
+    <button id="btn-catalogo" class="flex items-center hover:text-amber-500 transition focus:outline-none ">
+      Catálogo <i class="fa-solid fa-chevron-down ml-1 text-[10px] transition-transform duration-300" id="seta-catalogo"></i>
+    </button>
+
+    <div id="dropdown-menu" class="hidden absolute left-0 mt-4 w-48 bg-white rounded-lg shadow-xl overflow-hidden z-50 border-t-2 border-amber-500">
+      <div class="flex flex-col">
+        <a href="/brancos.html" class="px-4 py-3 text-gray-800 hover:bg-amber-500 hover:text-white transition text-xs uppercase font-bold border-b border-gray-100">Tons Brancos e cinzas</a>
+        <a href="/beges.html" class="px-4 py-3 text-gray-800 hover:bg-amber-500 hover:text-white transition text-xs uppercase font-bold border-b border-gray-100">Tons Beges</a>
+        <a href="/pretos" class="px-4 py-3 text-gray-800 hover:bg-amber-500 hover:text-white transition text-xs uppercase font-bold border-b border-gray-100">Pretos/Escuros</a>
+        <a href="/exoticos" class="px-4 py-3 text-gray-800 hover:bg-amber-500 hover:text-white transition text-xs uppercase font-bold">Exóticos</a>
+        <a href="/brownRed" class="px-4 py-3 text-gray-800 hover:bg-amber-500 hover:text-white transition text-xs uppercase font-bold">Exóticos</a>
+      </div>
+    </div>
+  </div>
+
+  <a href="contato.html" class="hover:text-amber-500 transition">Contato</a>
+</nav>
+
+    <a href="contato.html" class="bg-amber-500 text-black px-4 py-2 rounded-md font-semibold hover:bg-amber-400 transition text-sm">
+      Peça um Orçamento
+    </a>
+  </div>
+</header>
+<section class="pt-32 pb-20 bg-gray-50 min-h-screen">
+  <div class="max-w-7xl mx-auto px-4">
+    
+    <div class="mb-12">
+      <h2 class="text-4xl font-bold text-gray-900 uppercase">Nossos Serviços</h2>
+      <p class="text-gray-600 mt-2">Explore nossas soluções em mármores e granitos para cada ambiente.</p>
+    </div>
+
+    <div class="flex flex-col lg:flex-row gap-8">
+      
+      <aside class="w-full lg:w-1/4">
+        <div class="sticky top-24 bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
+          <ul id="menu-servicos" class="flex lg:flex-col overflow-x-auto lg:overflow-visible">
+            <li>
+              <button onclick="filtrarGaleria('cozinha', this)" class="btn-servico active w-full text-left px-6 py-4 font-bold border-l-4 border-amber-500 bg-amber-50 text-amber-700 transition">
+                <i class="fa-solid fa-utensils mr-3"></i> Cozinhas
+              </button>
+            </li>
+            <li>
+              <button onclick="filtrarGaleria('banheiro', this)" class="btn-servico w-full text-left px-6 py-4 font-bold border-l-4 border-transparent text-gray-600 hover:bg-gray-50 transition">
+                <i class="fa-solid fa-bath mr-3"></i> Banheiros
+              </button>
+            </li>
+            <li>
+              <button onclick="filtrarGaleria('escada', this)" class="btn-servico w-full text-left px-6 py-4 font-bold border-l-4 border-transparent text-gray-600 hover:bg-gray-50 transition">
+                <i class="fa-solid fa-stairs mr-3"></i> Escadas
+              </button>
+            </li>
+            <li>
+              <button onclick="filtrarGaleria('sala', this)" class="btn-servico w-full text-left px-6 py-4 font-bold border-l-4 border-transparent text-gray-600 hover:bg-gray-50 transition">
+                <i class="fa-solid fa-couch mr-3"></i> Salas e Pisos
+              </button>
+            </li>
+            <li>
+              <button onclick="filtrarGaleria('gourmet', this)" class="btn-servico w-full text-left px-6 py-4 font-bold border-l-4 border-transparent text-gray-600 hover:bg-gray-50 transition">
+                <i class="fa-solid fa-fire-burner mr-3"></i> Áreas Gourmet
+              </button>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <main class="w-full lg:w-3/4">
+        <div id="galeria-content" class="grid grid-cols-1 md:grid-cols-2 gap-4 transition-all duration-500">
+          </div>
+      </main>
+
+    </div>
+  </div>
+</section>
+
+<script>
+  // Banco de dados de imagens (Substitua pelos seus caminhos reais)
+  const imagensPorAmbiente = {
+    cozinha: [
+      'servicos/cozinha/cozinha1.webp',
+      'servicos/cozinha/cozinha2.webp',
+      'servicos/cozinha/cozinha3.webp',
+      'servicos/cozinha/cozinha4.webp',
+    ],
+    banheiro: [
+      'servicos/banheiro/banheiro1.webp',
+      'servicos/banheiro/banheiro2.webp',
+      'servicos/banheiro/banheiro3.webp',
+      'servicos/banheiro/banheiro4.webp',
+    ],
+    escada: [
+      'otimizadas/escada1.webp',
+      'otimizadas/escada2.webp'
+    ],
+    sala: [
+      'otimizadas/sala1.webp'
+    ],
+    gourmet: [
+      'otimizadas/gourmet1.webp'
+    ]
+  };
+
+  function filtrarGaleria(categoria, elemento) {
+    const container = document.getElementById('galeria-content');
+    const botoes = document.querySelectorAll('.btn-servico');
+
+    // 1. Atualiza visual do menu
+    botoes.forEach(btn => {
+      btn.classList.remove('bg-amber-50', 'text-amber-700', 'border-amber-500');
+      btn.classList.add('text-gray-600', 'border-transparent');
+    });
+    elemento.classList.add('bg-amber-50', 'text-amber-700', 'border-amber-500');
+    elemento.classList.remove('text-gray-600', 'border-transparent');
+
+    // 2. Limpa e reconstrói a galeria com efeito de fade
+    container.style.opacity = '0';
+    
+    setTimeout(() => {
+      container.innerHTML = '';
+      imagensPorAmbiente[categoria].forEach(url => {
+        const imgCard = `
+          <div class="overflow-hidden rounded-xl shadow-md h-80 group">
+            <img src="${url}" class="w-full h-full object-cover object-center group-hover:scale-110 transition duration-700 cursor-pointer">
+          </div>
+        `;
+        container.innerHTML += imgCard;
+      });
+      container.style.opacity = '1';
+    }, 300);
+  }
+
+  // Iniciar com a cozinha aberta
+  window.onload = () => {
+    const btnInicial = document.querySelector('.btn-servico');
+    filtrarGaleria('cozinha', btnInicial);
+  };
+</script>
+
+<style>
+  #galeria-content {
+    transition: opacity 0.3s ease-in-out;
+  }
+</style>
+
+<script>
+    const btnCatalogo = document.getElementById('btn-catalogo');
+    const dropdownMenu = document.getElementById('dropdown-menu');
+    const seta = document.getElementById('seta-catalogo');
+
+  
+  btnCatalogo.addEventListener('click', function(event) {
+    event.stopPropagation(); 
+    dropdownMenu.classList.toggle('hidden');
+    seta.classList.toggle('rotate-180');
+  });
+
+  
+  window.addEventListener('click', function(event) {
+    if (!btnCatalogo.contains(event.target)) {
+      dropdownMenu.classList.add('hidden');
+      seta.classList.remove('rotate-180');
+    }
+  });
+</script>    
+</body>
+</html>

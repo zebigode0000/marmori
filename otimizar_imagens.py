@@ -27,4 +27,4 @@ def otimizar_imagens(diretorio_entrada, diretorio_saida, qualidade=80):
                 print(f"Otimizado: {arquivo} -> {tamanho_kb:.2f} KB")
 
 
-otimizar_imagens('img', 'otimizadas')
+otimizar_imagens('marmoresBranco', 'marmoresBranco')

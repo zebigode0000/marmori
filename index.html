@@ -27,21 +27,39 @@
 
 <body class="bg-white text-gray-100">
 
-  <header class="bg-black/60 fixed w-full z-50 ">
-    <div class="max-w-7xl mx-auto flex items-center justify-between p-4 ">
-      <h1 class="text-xl font-bold text-amber-500">Marmoraria</h1>
-      <nav class=" hidden md:flex gap-6 text-sm font-semibold">
-        <a href="#inicio" class="hover:text-amber-500">Início</a>
-        <a href="#sobre" class="hover:text-amber-500">Sobre</a>
-        <a href="#servicos" class="hover:text-amber-500">Serviços</a>
-        <a href="#galeria" class="hover:text-amber-500">Galeria</a>
-        <a href="#contato" class="hover:text-amber-500">Contato</a>
-      </nav>
-      <a href="#contato" class="bg-amber-500 text-black px-4 py-2 rounded-md font-semibold hover:bg-amber-400 transition">
-        Peça um Orçamento
-      </a>
+  <header class="bg-black/80 fixed w-full z-50 backdrop-blur-sm">
+  <div class="max-w-7xl mx-auto flex items-center justify-between p-4">
+    <h1 class="text-xl font-bold text-amber-500 uppercase tracking-tighter">Marmoraria</h1>
+    
+    <nav class="hidden md:flex gap-6 text-sm font-semibold items-center">
+  <a href="index.html" class="hover:text-amber-500 transition">Início</a>
+  <a href="sobre.html" class="hover:text-amber-500 transition">Sobre</a>
+  <a href="servicos.html" class="hover:text-amber-500 transition">Serviços</a>
+  
+  <div class="relative">
+    <button id="btn-catalogo" class="flex items-center hover:text-amber-500 transition focus:outline-none ">
+      Catálogo <i class="fa-solid fa-chevron-down ml-1 text-[10px] transition-transform duration-300" id="seta-catalogo"></i>
+    </button>
+
+    <div id="dropdown-menu" class="hidden absolute left-0 mt-4 w-48 bg-white rounded-lg shadow-xl overflow-hidden z-50 border-t-2 border-amber-500">
+      <div class="flex flex-col">
+        <a href="/brancos.html" class="px-4 py-3 text-gray-800 hover:bg-amber-500 hover:text-white transition text-xs uppercase font-bold border-b border-gray-100">Tons Brancos e cinzas</a>
+        <a href="/beges.html" class="px-4 py-3 text-gray-800 hover:bg-amber-500 hover:text-white transition text-xs uppercase font-bold border-b border-gray-100">Tons Beges</a>
+        <a href="/pretos" class="px-4 py-3 text-gray-800 hover:bg-amber-500 hover:text-white transition text-xs uppercase font-bold border-b border-gray-100">Pretos/Escuros</a>
+        <a href="/exoticos" class="px-4 py-3 text-gray-800 hover:bg-amber-500 hover:text-white transition text-xs uppercase font-bold">Exóticos</a>
+        <a href="/brownRed" class="px-4 py-3 text-gray-800 hover:bg-amber-500 hover:text-white transition text-xs uppercase font-bold">Exóticos</a>
+      </div>
     </div>
-  </header>
+  </div>
+
+  <a href="contato.html" class="hover:text-amber-500 transition">Contato</a>
+</nav>
+
+    <a href="contato.html" id="" class="bg-amber-500 text-black px-4 py-2 rounded-md font-semibold hover:bg-amber-400 transition text-sm">
+      Peça um Orçamento
+    </a>
+  </div>
+</header>
 
   <section class=" bg-[url('otimizadas/banner.webp')] h-[500px] bg-cover bg-center w-full bg-no-repeat" fetchpriority="high">
     <div class="bg-black/60 flex flex-col justify-center h-full w-4/4 pl-2 md:pl-10 ">
@@ -54,14 +72,14 @@
     <div class="text-black px-4 lg:w-2/4">
         <h1 class="text-4xl font-semibold">Sobre Nós</h1>
         <hr class="border-black w-2/4">
-        <h3 class="py-3 text-xl">Qualidade e Experiencia</h3>
-        <p class="py-4 text-lg ">Com anos de experiência no mercado, nossa marmoraria une a força da natureza à precisão do design. Somos especialistas em transformar mármores, granitos e superfícies de quartzo em soluções exclusivas para cozinhas, banheiros e áreas gourmet. <br> <br>
+        <h3 class="py-3 text-xl font-semibold">Qualidade e Experiencia</h3>
+        <p class="py-4 text-lg font-semibold">Com anos de experiência no mercado, nossa marmoraria une a força da natureza à precisão do design. Somos especialistas em transformar mármores, granitos e superfícies de quartzo em soluções exclusivas para cozinhas, banheiros e áreas gourmet. <br> <br>
 
-        Nosso compromisso vai além da entrega: entregamos durabilidade, sofisticação e o cuidado em cada acabamento. Trabalhamos com os melhores fornecedores para garantir que cada detalhe da sua obra reflita o alto padrão que você merece.</p>
-        <ul class="py-4">
-            <li><i class="fa-solid fa-circle-check fa-4xs stroke-2" style="color: #F59E0B;"></i>Materiais de alta qualidade</li>
-            <li><i class="fa-solid fa-circle-check fa-4xs" style="color: #F59E0B;"></i>Equipe Especializada</li>
-            <li><i class="fa-solid fa-circle-check fa-4xs" style="color: #F59E0B;"></i>Atendimento Personalizado</li>
+        Nosso compromisso vai além da entrega: entregamos <span class="bg-amber-500 p-0.5">durabilidade</span>, <span class="bg-amber-500 p-0.5">sofisticação</span> <span class="bg-amber-500 p-0.5">o cuidado em cada acabamento</span>. Trabalhamos com os melhores fornecedores para garantir que cada detalhe da sua obra reflita o alto padrão que você merece.</p>
+        <ul class="py-4 font-semibold">
+            <li><i class="fa-solid fa-circle-check fa-4xs stroke-2" style="color: #F59E0B;"></i> Materiais de alta qualidade</li>
+            <li><i class="fa-solid fa-circle-check fa-4xs" style="color: #F59E0B;"></i> Equipe Especializada</li>
+            <li><i class="fa-solid fa-circle-check fa-4xs" style="color: #F59E0B;"></i> Atendimento Personalizado</li>
         </ul>
     </div>
     <div class="w-full flex items-center justify-center p-3 lg:w-2/4">
@@ -155,43 +173,47 @@
             <div class="swiper-pagination"></div>
         </div>
     </section>
-    <section class="bg-[url('otimizadas/marmorip.webp')] bg-cover bg-top p-5 lg:flex">
-        <div class=" w-full">
-            <div class="flex flex-col items-center">
-                <h1 class="text-3xl font-semibold">Entre em Contato</h1>
-                <p class="text-1xl">Solicite um Orçamento</p>
-                <hr></hr>
-            </div>
-            <div class="flex flex-col w-full gap-4 p-5">
-                <input id="nome" class="p-2 text-black" type="text" placeholder="Digite seu Nome Aqui">
-    
-                <select id="material" class="text-black p-2 w-full">
-                    <option value="Não informado">Preferência de material?</option>
-                    <option>Granito (Mais resistente/Econômico)</option>
-                    <option>Mármore (Clássico/Sofisticado)</option>
-                    <option>Quartzo / Sintético (Moderno/Cores sólidas)</option>
-                    <option>Ainda não decidi (Preciso de sugestão)</option>
-                </select>
-    
-                <textarea id="mensagem" class="p-2 text-black" placeholder="O que precisa?"></textarea>
-    
-                <div class="flex justify-center w-full">
-                    <button id="btnEnviar" type="button" class="bg-amber-500 p-2 w-64 rounded-md font-bold text-black">Enviar</button>
-                </div>
-            </div>
-        </div>
+    <section id="contato" class="bg-[url('otimizadas/marmorip.webp')] bg-cover bg-top p-5 lg:flex">
+        <form id="formContato" class="space-y-4 w-full">
+          <div>
+            <label class="block text-sm font-bold text-white mb-1">Nome Completo</label>
+            <input type="text" id="contato_nome" class="w-full p-3 bg-gray-50 border border-gray-200 rounded-lg focus:ring-2 focus:ring-amber-500 focus:outline-none transition" placeholder="Ex: João Silva">
+          </div>
+
+          <div>
+            <label class="block text-sm font-bold text-white mb-1">Ambiente</label>
+            <select id="contato_ambiente" class="w-full p-3 bg-gray-50 border border-gray-200 rounded-lg focus:ring-2 focus:ring-amber-500 focus:outline-none transition">
+              <option value="Não informado">Selecione o ambiente</option>
+              <option value="Cozinha">Cozinha</option>
+              <option value="Banheiro">Banheiro</option>
+              <option value="Escada">Escada</option>
+              <option value="Área Gourmet">Área Gourmet</option>
+              <option value="Outros">Outros</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="block text-sm font-bold text-white mb-1">Sua Mensagem</label>
+            <textarea id="contato_mensagem" rows="4" class="w-full p-3 bg-gray-50 border border-gray-200 rounded-lg focus:ring-2 focus:ring-amber-500 focus:outline-none transition" placeholder="Descreva brevemente seu projeto..."></textarea>
+          </div>
+
+          <button type="button" onclick="enviarWhatsappContato()" class="w-full bg-amber-500 text-black font-bold py-4 rounded-lg hover:bg-amber-600 transition shadow-lg flex items-center justify-center gap-2">
+            <i class="fa-brands fa-whatsapp text-xl"></i>
+            ENVIAR PELO WHATSAPP
+          </button>
+        </form>
         <div class="flex flex-col text-md font-semibold p-5 w-full">
             <div class="bg-gradient-to-r from-black/70 to-black/0 p-5 border-b-2">
-                <p><i class="fa-solid fa-phone" style="color: #F59E0B;"></i>Telefone:</p>
-                <p class="pl-5">11 98512-2839</p>
+                <p><i class="fa-solid fa-phone" style="color: #F59E0B;"></i> Telefone:</p>
+                <p class="pl-5"> 11 98512-2839</p>
             </div>
             <div class="bg-gradient-to-r from-black/70 to-black/0 p-5 border-b-2 ">
-                <p><i class="fa-solid fa-envelope " style="color: #F59E0B;"></i>E-mail:</p>
-                <p class="pl-5">augusto@gmail.com</p>
+                <p><i class="fa-solid fa-envelope " style="color: #F59E0B;"></i> E-mail:</p>
+                <p class="pl-5"> augusto@gmail.com</p>
             </div>
             <div class="bg-gradient-to-r from-black/70 to-black/0 p-5 border-b-2 ">
-                <p><i class="fa-solid fa-map-location-dot" style="color: #F59E0B;"></i>Endereço:</p>
-                <p class="pl-5">rua tavaras, 89</p>
+                <p><i class="fa-solid fa-map-location-dot" style="color: #F59E0B;"></i> Endereço:</p>
+                <p class="pl-5"> rua tavaras, 89</p>
             </div>
         </div>
     </section>
@@ -214,30 +236,49 @@
     autoplay: { delay: 3000 },
 });
 document.getElementById('btnEnviar').addEventListener('click', function() {
-        // 1. Pega os valores dos campos
+        
         const nome = document.getElementById('nome').value;
         const material = document.getElementById('material').value;
         const mensagem = document.getElementById('mensagem').value;
-        const telefoneMarmoraria = "5511985149353"; // Seu número com DDD (apenas números)
+        const telefoneMarmoraria = "5511985149353"; // Seu número com DDD 
 
-        // 2. Validação básica
+       
         if (nome === "") {
             alert("Por favor, digite seu nome.");
             return;
         }
 
-        // 3. Monta a mensagem (o \n serve para quebrar a linha no WhatsApp)
+        
         const texto = `Olá! Gostaria de um orçamento.%0A%0A` +
                       `*Nome:* ${nome}%0A` +
                       `*Material:* ${material}%0A` +
                       `*Pedido:* ${mensagem}`;
 
-        // 4. Cria a URL final
+        
         const url = `https://api.whatsapp.com/send?phone=${telefoneMarmoraria}&text=${texto}`;
 
-        // 5. Abre o WhatsApp
+        
         window.open(url, '_blank');
     });
+
+    const btnCatalogo = document.getElementById('btn-catalogo');
+    const dropdownMenu = document.getElementById('dropdown-menu');
+    const seta = document.getElementById('seta-catalogo');
+
+  
+  btnCatalogo.addEventListener('click', function(event) {
+    event.stopPropagation(); 
+    dropdownMenu.classList.toggle('hidden');
+    seta.classList.toggle('rotate-180');
+  });
+
+  
+  window.addEventListener('click', function(event) {
+    if (!btnCatalogo.contains(event.target)) {
+      dropdownMenu.classList.add('hidden');
+      seta.classList.remove('rotate-180');
+    }
+  });
     </script>
 
 </body>

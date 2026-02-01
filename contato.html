@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Marmoraria Premium | Mármore e Granito em Guarulhos</title>
+  
+  <link rel="preload" as="image" href="otimizadas/banner.webp" fetchpriority="high">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com?minify=true"></script>
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+<body>
+    <header class="bg-black/80 fixed w-full z-50 backdrop-blur-sm">
+  <div class="max-w-7xl mx-auto flex items-center justify-between p-4">
+    <h1 class="text-xl font-bold text-amber-500 uppercase tracking-tighter">Marmoraria</h1>
+    
+    <nav class="hidden md:flex gap-6 text-sm font-semibold items-center text-white">
+  <a href="index.html" class="hover:text-amber-500 transition">Início</a>
+  <a href="sobre.html" class="hover:text-amber-500 transition">Sobre</a>
+  <a href="servicos.html" class="hover:text-amber-500 transition">Serviços</a>
+  
+  <div class="relative">
+    <button id="btn-catalogo" class="flex items-center hover:text-amber-500 transition focus:outline-none ">
+      Catálogo <i class="fa-solid fa-chevron-down ml-1 text-[10px] transition-transform duration-300" id="seta-catalogo"></i>
+    </button>
+
+    <div id="dropdown-menu" class="hidden absolute left-0 mt-4 w-48 bg-white rounded-lg shadow-xl overflow-hidden z-50 border-t-2 border-amber-500">
+      <div class="flex flex-col">
+        <a href="/brancos.html" class="px-4 py-3 text-gray-800 hover:bg-amber-500 hover:text-white transition text-xs uppercase font-bold border-b border-gray-100">Tons Brancos e cinzas</a>
+        <a href="/beges.html" class="px-4 py-3 text-gray-800 hover:bg-amber-500 hover:text-white transition text-xs uppercase font-bold border-b border-gray-100">Tons Beges</a>
+        <a href="/pretos" class="px-4 py-3 text-gray-800 hover:bg-amber-500 hover:text-white transition text-xs uppercase font-bold border-b border-gray-100">Pretos/Escuros</a>
+        <a href="/exoticos" class="px-4 py-3 text-gray-800 hover:bg-amber-500 hover:text-white transition text-xs uppercase font-bold">Exóticos</a>
+        <a href="/brownRed" class="px-4 py-3 text-gray-800 hover:bg-amber-500 hover:text-white transition text-xs uppercase font-bold">Exóticos</a>
+      </div>
+    </div>
+  </div>
+
+  <a href="contato.html" class="hover:text-amber-500 transition">Contato</a>
+</nav>
+
+    <a href="contato.html" class="bg-amber-500 text-black px-4 py-2 rounded-md font-semibold hover:bg-amber-400 transition text-sm">
+      Peça um Orçamento
+    </a>
+  </div>
+</header>
+    <section class="py-20 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-4">
+    
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-bold text-gray-900 uppercase tracking-tight">Fale Conosco</h2>
+      <div class="w-20 h-1 bg-amber-500 mx-auto mt-4"></div>
+      <p class="text-gray-600 mt-4">Estamos prontos para transformar o seu projeto em realidade.</p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+      
+      <div class="space-y-8">
+        <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+          <h3 class="text-2xl font-bold text-gray-800 mb-6">Informações de Contato</h3>
+          
+          <div class="space-y-6">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center text-amber-600">
+                <i class="fa-solid fa-phone text-xl"></i>
+              </div>
+              <div>
+                <p class="text-sm text-gray-500 font-semibold uppercase">Telefone / WhatsApp</p>
+                <p class="text-lg text-gray-800 font-bold">11 98512-2839</p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center text-amber-600">
+                <i class="fa-solid fa-envelope text-xl"></i>
+              </div>
+              <div>
+                <p class="text-sm text-gray-500 font-semibold uppercase">E-mail</p>
+                <p class="text-lg text-gray-800 font-bold">augusto@gmail.com</p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center text-amber-600">
+                <i class="fa-solid fa-location-dot text-xl"></i>
+              </div>
+              <div>
+                <p class="text-sm text-gray-500 font-semibold uppercase">Endereço</p>
+                <p class="text-lg text-gray-800 font-bold">Rua Tavares, 89 - Guarulhos, SP</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="rounded-2xl overflow-hidden shadow-sm h-64 border border-gray-100">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.000000000000!2d-46.5!3d-23.4!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDI0JzAwLjAiUyA0NsKwMzAnMDAuMCJX!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr" 
+            class="w-full h-full border-0" allowfullscreen="" loading="lazy">
+          </iframe>
+        </div>
+      </div>
+
+      <div class="bg-white p-8 rounded-2xl shadow-xl border border-gray-100">
+        <h3 class="text-2xl font-bold text-gray-800 mb-6">Solicite seu Orçamento</h3>
+        
+        <form id="formContato" class="space-y-4">
+          <div>
+            <label class="block text-sm font-bold text-gray-700 mb-1">Nome Completo</label>
+            <input type="text" id="contato_nome" class="w-full p-3 bg-gray-50 border border-gray-200 rounded-lg focus:ring-2 focus:ring-amber-500 focus:outline-none transition" placeholder="Ex: João Silva">
+          </div>
+
+          <div>
+            <label class="block text-sm font-bold text-gray-700 mb-1">Ambiente</label>
+            <select id="contato_ambiente" class="w-full p-3 bg-gray-50 border border-gray-200 rounded-lg focus:ring-2 focus:ring-amber-500 focus:outline-none transition">
+              <option value="Não informado">Selecione o ambiente</option>
+              <option value="Cozinha">Cozinha</option>
+              <option value="Banheiro">Banheiro</option>
+              <option value="Escada">Escada</option>
+              <option value="Área Gourmet">Área Gourmet</option>
+              <option value="Outros">Outros</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="block text-sm font-bold text-gray-700 mb-1">Sua Mensagem</label>
+            <textarea id="contato_mensagem" rows="4" class="w-full p-3 bg-gray-50 border border-gray-200 rounded-lg focus:ring-2 focus:ring-amber-500 focus:outline-none transition" placeholder="Descreva brevemente seu projeto..."></textarea>
+          </div>
+
+          <button type="button" onclick="enviarWhatsappContato()" class="w-full bg-amber-500 text-black font-bold py-4 rounded-lg hover:bg-amber-600 transition shadow-lg flex items-center justify-center gap-2">
+            <i class="fa-brands fa-whatsapp text-xl"></i>
+            ENVIAR PELO WHATSAPP
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<script>
+  function enviarWhatsappContato() {
+    const nome = document.getElementById('contato_nome').value;
+    const ambiente = document.getElementById('contato_ambiente').value;
+    const mensagem = document.getElementById('contato_mensagem').value;
+    const fone = "5511985149353"; 
+
+    if(!nome) { alert("Por favor, preencha seu nome."); return; }
+
+    const texto = `*NOVO ORÇAMENTO - SITE*%0A%0A*Nome:* ${nome}%0A*Ambiente:* ${ambiente}%0A*Detalhes:* ${mensagem}`;
+    window.open(`https://api.whatsapp.com/send?phone=${fone}&text=${texto}`, '_blank');
+  }
+  const btnCatalogo = document.getElementById('btn-catalogo');
+    const dropdownMenu = document.getElementById('dropdown-menu');
+    const seta = document.getElementById('seta-catalogo');
+
+  
+  btnCatalogo.addEventListener('click', function(event) {
+    event.stopPropagation(); 
+    dropdownMenu.classList.toggle('hidden');
+    seta.classList.toggle('rotate-180');
+  });
+
+  
+  window.addEventListener('click', function(event) {
+    if (!btnCatalogo.contains(event.target)) {
+      dropdownMenu.classList.add('hidden');
+      seta.classList.remove('rotate-180');
+    }
+  });
+</script>
+</body>
+</html>
