@@ -22,6 +22,49 @@
     body {
       font-family: 'Inter', sans-serif;
     }
+        .aparecer{
+            animation: subir 1s ease forwards ;
+        }
+        .aparecerslide{
+            animation: aparecerslide 1s ease forwards;
+        }
+        .apareceresq{
+            animation: apareceresq 1s ease forwards
+        }
+        .esconder{
+            opacity: 0;
+            pointer-events: none;
+        }
+        @keyframes aparecerslide{
+            from{
+                transform: translateX(20px);
+                opacity: 0;
+            }
+            to{
+                transform: translateX(0px);
+                opacity: 1;
+            }
+        }
+        @keyframes subir{
+            from{
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to{
+                transform: translateY(0px);
+                opacity: 1;
+            }
+        }
+        @keyframes apareceresq{
+            from{
+                transform: translateX(-20px);
+                opacity: 0;
+            }
+            to{
+                transform: translateX(0px);
+                opacity: 1;
+            }
+        }
   </style>
 </head>
 
@@ -29,15 +72,15 @@
 
   <header class="bg-black/80 fixed w-full z-50 backdrop-blur-sm">
   <div class="max-w-7xl mx-auto flex items-center justify-between p-4">
-    <h1 class="text-xl font-bold text-amber-500 uppercase tracking-tighter">Marmoraria</h1>
+    <h1 class="text-xl font-bold text-amber-500 uppercase tracking-tighter esconder" data-anim="aparecerslide">Marmoraria</h1>
     
     <nav class="hidden md:flex gap-6 text-sm font-semibold items-center">
-  <a href="index.html" class="hover:text-amber-500 transition">Início</a>
-  <a href="sobre.html" class="hover:text-amber-500 transition">Sobre</a>
-  <a href="servicos.html" class="hover:text-amber-500 transition">Serviços</a>
+  <a href="index.html" class="hover:text-amber-500 transition esconder" data-anim="aparecerslide">Início</a>
+  <a href="sobre.html" class="hover:text-amber-500 transition esconder" data-anim="aparecerslide">Sobre</a>
+  <a href="servicos.html" class="hover:text-amber-500 transition esconder " data-anim="aparecerslide">Serviços</a>
   
   <div class="relative">
-    <button id="btn-catalogo" class="flex items-center hover:text-amber-500 transition focus:outline-none ">
+    <button id="btn-catalogo" class="flex items-center hover:text-amber-500 transition focus:outline-none esconder " data-anim="aparecerslide">
       Catálogo <i class="fa-solid fa-chevron-down ml-1 text-[10px] transition-transform duration-300" id="seta-catalogo"></i>
     </button>
 
@@ -52,41 +95,41 @@
     </div>
   </div>
 
-  <a href="contato.html" class="hover:text-amber-500 transition">Contato</a>
+  <a href="contato.html" class="hover:text-amber-500 transition esconder" data-anim="aparecerslide">Contato</a>
 </nav>
 
-    <a href="contato.html" id="" class="bg-amber-500 text-black px-4 py-2 rounded-md font-semibold hover:bg-amber-400 transition text-sm">
+    <a href="contato.html" id="" class="bg-amber-500 text-black px-4 py-2 rounded-md font-semibold hover:bg-amber-400 transition text-sm esconder" data-anim="aparecerslide">
       Peça um Orçamento
     </a>
   </div>
 </header>
 
   <section class=" bg-[url('otimizadas/banner.webp')] h-[500px] bg-cover bg-center w-full bg-no-repeat" fetchpriority="high">
-    <div class="bg-black/60 flex flex-col justify-center h-full w-4/4 pl-2 md:pl-10 ">
-        <h1 class="text-5xl font-bold">Excelencia em Marmore e Granito</h1>
-        <p class="text-xl py-3 font-semibold">transformando seu ambiente com Elegancia e Sofisticação</p>
-        <a href="contato.html" class="bg-amber-500 p-3 w-max rounded-xl text-black font-semibold">Solicite um Orçamento</a>
+    <div class="bg-black/60 flex flex-col justify-center h-full w-4/4 pl-2 md:pl-10">
+        <h1 class="text-5xl font-bold esconder" data-anim="aparecer">Excelencia em Marmore e Granito</h1>
+        <p class="text-xl py-3 font-semibold esconder" data-anim="aparecer">transformando seu ambiente com Elegancia e Sofisticação</p>
+        <a href="contato.html" class="bg-amber-500 p-3 w-max rounded-xl text-black font-semibold esconder" data-anim="aparecer">Solicite um Orçamento</a>
     </div>
   </section>
   <section class="p-3 flex w-full flex flex-col lg:flex-row bg-[url('otimizadas/z.webp')] bg-cover bg-center bg-no-repeat md:p-10">
     <div class="text-black px-4 lg:w-2/4">
-        <h1 class="text-4xl font-semibold">Sobre Nós</h1>
-        <hr class="border-black w-2/4">
-        <h3 class="py-3 text-xl font-semibold">Qualidade e Experiencia</h3>
-        <p class="py-4 text-lg font-semibold">Com anos de experiência no mercado, nossa marmoraria une a força da natureza à precisão do design. Somos especialistas em transformar mármores, granitos e superfícies de quartzo em soluções exclusivas para cozinhas, banheiros e áreas gourmet. <br> <br>
+        <h1 class="text-4xl font-semibold esconder" data-anim="apareceresq">Sobre Nós</h1>
+        <hr class="border-black w-2/4 esconder" data-anim="apareceresq">
+        <h3 class="py-3 text-xl font-semibold esconder" data-anim="apareceresq">Qualidade e Experiencia</h3>
+        <p class="py-4 text-lg font-semibold esconder" data-anim="apareceresq">Com anos de experiência no mercado, nossa marmoraria une a força da natureza à precisão do design. Somos especialistas em transformar mármores, granitos e superfícies de quartzo em soluções exclusivas para cozinhas, banheiros e áreas gourmet. <br> <br>
 
         Nosso compromisso vai além da entrega: entregamos <span class="bg-amber-500 p-0.5">durabilidade</span>, <span class="bg-amber-500 p-0.5">sofisticação</span> <span class="bg-amber-500 p-0.5">o cuidado em cada acabamento</span>. Trabalhamos com os melhores fornecedores para garantir que cada detalhe da sua obra reflita o alto padrão que você merece.</p>
         <ul class="py-4 font-semibold">
-            <li><i class="fa-solid fa-circle-check fa-4xs stroke-2" style="color: #F59E0B;"></i> Materiais de alta qualidade</li>
-            <li><i class="fa-solid fa-circle-check fa-4xs" style="color: #F59E0B;"></i> Equipe Especializada</li>
-            <li><i class="fa-solid fa-circle-check fa-4xs" style="color: #F59E0B;"></i> Atendimento Personalizado</li>
+            <li class="esconder" data-anim="apareceresq"><i class="fa-solid fa-circle-check fa-4xs stroke-2" style="color: #F59E0B;"></i> Materiais de alta qualidade</li>
+            <li class="esconder" data-anim="apareceresq"><i class="fa-solid fa-circle-check fa-4xs" style="color: #F59E0B;"></i> Equipe Especializada</li>
+            <li class="esconder" data-anim="apareceresq"><i class="fa-solid fa-circle-check fa-4xs" style="color: #F59E0B;"></i> Atendimento Personalizado</li>
         </ul>
-        <div class="my-3">
-            <a href="sobre.html" class="bg-amber-500 p-3 w-max rounded-xl text-black font-semibold" >Ver Sobre Nós</a>
+        <div class="my-3 esconder" data-anim="apareceresq">
+            <a href="sobre.html" class="bg-amber-500 p-3 w-max rounded-xl text-black font-semibold">Ver Sobre Nós</a>
         </div>
     </div>
     <div class="w-full flex items-center justify-center p-3 lg:w-2/4">
-        <img class=" rounded-xl border-4 border-yellow-600 border-solid" src="otimizadas/imagemmarmores.webp" alt="" loading="lazy">
+        <img class=" rounded-xl border-4 border-yellow-600 border-solid esconder" data-anim="aparecer" src="otimizadas/imagemmarmores.webp" alt="" loading="lazy">
     </div>
   </section>
   <section class="bg-[url('otimizadas/marmorip.webp')] bg-cover bg-center bg-no-repeat w-full flex flex-col items-center p-5">
@@ -96,30 +139,30 @@
         <p class="text-center">O que Fazemos</p>
     </div>
     <div class="flex flex-col gap-6 w-full  lg:flex-row lg:justify-center">
-        <div class="bg-black/60 font-semibold hover:scale-105 transition-transform duration-300">
+        <div class="bg-black/60 font-semibold hover:scale-105 transition-transform duration-300 esconder" data-anim="aparecer">
             <img class="w-full h-64 object-cover object-center lg:w-64 h-64 rounded-xl" src="otimizadas/cozinha.webp" alt="" loading="lazy">
             <p class="p-1">Cozinha</p>
         </div>
-        <div class="bg-black/60 font-semibold hover:scale-105 transition-transform duration-300">
+        <div class="bg-black/60 font-semibold hover:scale-105 transition-transform duration-300 esconder" data-anim="aparecer">
             <img class="w-full h-64 object-cover object-center lg:w-64 h-64 rounded-xl" src="otimizadas/escada.webp" alt="" loading="lazy">
             <p class="p-1">Escada</p>
         </div>
-        <div class="bg-black/60 font-semibold hover:scale-105 transition-transform duration-300">
+        <div class="bg-black/60 font-semibold hover:scale-105 transition-transform duration-300 esconder" data-anim="aparecer">
             <img class="w-full h-64 object-cover object-center lg:w-64 h-64 rounded-xl" src="otimizadas/banheiro.webp" alt="" loading="lazy">
             <p class="p-1">Banheiro</p>
         </div>
-        <div class="bg-black/60 font-semibold hover:scale-105 transition-transform duration-300">
+        <div class="bg-black/60 font-semibold hover:scale-105 transition-transform duration-300 esconder" data-anim="aparecer">
             <img class="w-full h-64 object-cover object-center lg:w-64 h-64 rounded-xl" src="otimizadas/areagourmet.webp" alt="" loading="lazy">
             <p class="p-1">Area Gourmet</p>
         </div>
     </div>
     <div class="py-10">
-        <a href="servicos.html" class="bg-amber-500 p-2 rounded-md px-20 mb-5 text-center text-black font-semibold">Ver Mais</a>
+        <a href="servicos.html" class="bg-amber-500 p-2 rounded-md px-20 mb-5 text-center text-black font-semibold esconder" data-anim="aparecer">Ver Mais</a>
     </div>
   </section>
   <section class="py-20 bg-[url('otimizadas/marmoribd.webp')] overflow-hidden bg-cover bg-center bg-no-repeat w-full px-5">
-        <h2 class="text-center text-3xl font-bold mb-12 text-black/80">O QUE DIZEM SOBRE NÓS</h2>
-        <div class="swiper mySwiper max-w-4xl mx-auto px-5 shadow-xl/90">
+        <h2 class="text-center text-3xl font-bold mb-12 text-black/80 esconder" data-anim="aparecer">O QUE DIZEM SOBRE NÓS</h2>
+        <div class="swiper mySwiper max-w-4xl mx-auto px-5 shadow-xl/90 esconder" data-anim="aparecer">
             <div class="swiper-wrapper">
                 <div class="swiper-slide p-10 rounded-2xl border text-black bg-black/20 bg-cover bg-center">
                     <p class="text-lg italic mb-6">"Fiquei impressionado com o cuidado nos detalhes e o brilho final do granito instalado."</p>
@@ -296,5 +339,6 @@ document.getElementById('btnEnviar').addEventListener('click', function() {
     }
   });
     </script>
+    <script src="js.js"></script>
 </body>
 </html>
