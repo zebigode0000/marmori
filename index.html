@@ -29,6 +29,9 @@
         width: 100%;
       font-family: 'Inter', sans-serif;
     }
+        .aparecerdir{
+            animation:aparecerdir 1s ease forwards
+        }
         .aparecer{
             animation: subir 1s ease forwards ;
         }
@@ -54,7 +57,7 @@
         }
         @keyframes subir{
             from{
-                transform: translateY(20px);
+                transform: translateY(40px);
                 opacity: 0;
             }
             to{
@@ -64,7 +67,17 @@
         }
         @keyframes apareceresq{
             from{
-                transform: translateX(-20px);
+                transform: translateX(-40px);
+                opacity: 0;
+            }
+            to{
+                transform: translateX(0px);
+                opacity: 1;
+            }
+        }
+        @keyframes aparecerdir{
+            from{
+                transform: translateX(40px);
                 opacity: 0;
             }
             to{
@@ -208,7 +221,7 @@
     </section>
 
     <section class="bg-[url('otimizadas/marmoriTech2.webp')] bg-right bg-cover bg-no-repeat w-full py-24 px-5 md:px-20">
-        <h2 class="text-center font-black text-gray-800 text-4xl md:text-5xl mb-16 uppercase tracking-widest">Execução em Etapas</h2>
+        <h2 class="text-center font-black text-gray-800 text-4xl md:text-5xl mb-16 uppercase tracking-widest esconder" data-anim="aparecer">Execução em Etapas</h2>
         <div class="grid md:grid-cols-3 gap-0">
             <div class="p-12" data-aos="fade-up">
                 <span class="text-5xl font-black text-gray-800 mb-6 block">01</span>
@@ -230,19 +243,19 @@
 
     <section class="py-20 bg-gray-50 px-6 md:px-20">
     <div class="max-w-7xl mx-auto">
-        <h2 class="text-4xl md:text-5xl font-black text-gray-800 mb-12 text-center uppercase">Nossos Diferenciais</h2>
+        <h2 class="text-4xl md:text-5xl font-black text-gray-800 mb-12 text-center uppercase esconder" data-anim="aparecer">Nossos Diferenciais</h2>
         <div class="grid md:grid-cols-3 gap-8">
-            <div class="bg-white p-8 rounded-2xl shadow-sm border-b-4 border-amber-500">
+            <div class="bg-white p-8 rounded-2xl shadow-sm border-b-4 border-amber-500 esconder" data-anim="apareceresq">
                 <i class="fa-solid fa-gem text-amber-500 text-3xl mb-4"></i>
                 <h4 class="font-bold text-gray-800 text-xl mb-2">Exclusividade</h4>
                 <p class="text-gray-600 text-sm">Cada chapa de mármore é única. Garantimos que sua obra terá um desenho que ninguém mais tem.</p>
             </div>
-            <div class="bg-white p-8 rounded-2xl shadow-sm border-b-4 border-amber-500">
+            <div class="bg-white p-8 rounded-2xl shadow-sm border-b-4 border-amber-500 esconder" data-anim="aparecer">
                 <i class="fa-solid fa-shield-halved text-amber-500 text-3xl mb-4"></i>
                 <h4 class="font-bold text-gray-800 text-xl mb-2">Impermeabilização</h4>
                 <p class="text-gray-600 text-sm">Aplicamos selantes de alta performance que protegem sua bancada contra manchas de café, vinho e óleos.</p>
             </div>
-            <div class="bg-white p-8 rounded-2xl shadow-sm border-b-4 border-amber-500">
+            <div class="bg-white p-8 rounded-2xl shadow-sm border-b-4 border-amber-500 esconder" data-anim="aparecerdir">
                 <i class="fa-solid fa-handshake text-amber-500 text-3xl mb-4"></i>
                 <h4 class="font-bold text-gray-800 text-xl mb-2">Pós-Entrega</h4>
                 <p class="text-gray-600 text-sm">Nosso compromisso não acaba na instalação. Oferecemos suporte para manutenção e limpeza das pedras.</p>
@@ -311,14 +324,14 @@
     </section>
     <section class="py-20 bg-[url('otimizadas/marmoribd.webp')] bg-cover bg-center bg-no-repeat w-full px-6 md:px-20 ">
     <div class="max-w-4xl mx-auto">
-        <div class="text-center mb-12">
+        <div class="text-center mb-12 esconder" data-anim="aparecer">
             <h2 class="text-4xl md:text-5xl font-black text-gray-800 uppercase tracking-tighter">Dúvidas Frequentes</h2>
             <p class="text-gray-500 mt-2 font-medium">Tudo o que você precisa saber antes de iniciar seu projeto</p>
             <div class="w-20 h-1 bg-amber-500 mx-auto mt-4"></div>
         </div>
 
         <div class="space-y-4">
-            <details class="group bg-gray-50 rounded-xl p-6 transition-all duration-300 open:bg-amber-50">
+            <details class="group bg-gray-50 rounded-xl p-6 transition-all duration-300 open:bg-amber-50 esconder" data-anim="apareceresq">
                 <summary class="flex justify-between items-center font-bold text-gray-800 list-none cursor-pointer">
                     <span class="flex items-center gap-3">
                         <i class="fa-solid fa-calendar-check text-amber-500"></i>
@@ -333,7 +346,7 @@
                 </p>
             </details>
 
-            <details class="group bg-gray-50 rounded-xl p-6 transition-all duration-300 open:bg-amber-50">
+            <details class="group bg-gray-50 rounded-xl p-6 transition-all duration-300 open:bg-amber-50 esconder" data-anim="apareceresq">
                 <summary class="flex justify-between items-center font-bold text-gray-800 list-none cursor-pointer">
                     <span class="flex items-center gap-3">
                         <i class="fa-solid fa-droplet-slash text-amber-500"></i>
@@ -348,7 +361,7 @@
                 </p>
             </details>
 
-            <details class="group bg-gray-50 rounded-xl p-6 transition-all duration-300 open:bg-amber-50">
+            <details class="group bg-gray-50 rounded-xl p-6 transition-all duration-300 open:bg-amber-50 esconder" data-anim="apareceresq">
                 <summary class="flex justify-between items-center font-bold text-gray-800 list-none cursor-pointer">
                     <span class="flex items-center gap-3">
                         <i class="fa-solid fa-ruler-combined text-amber-500"></i>
@@ -363,7 +376,7 @@
                 </p>
             </details>
 
-            <details class="group bg-gray-50 rounded-xl p-6 transition-all duration-300 open:bg-amber-50">
+            <details class="group bg-gray-50 rounded-xl p-6 transition-all duration-300 open:bg-amber-50 esconder" data-anim="apareceresq">
                 <summary class="flex justify-between items-center font-bold text-gray-800 list-none cursor-pointer">
                     <span class="flex items-center gap-3">
                         <i class="fa-solid fa-credit-card text-amber-500"></i>
@@ -378,7 +391,7 @@
                 </p>
             </details>
 
-            <details class="group bg-gray-50 rounded-xl p-6 transition-all duration-300 open:bg-amber-50">
+            <details class="group bg-gray-50 rounded-xl p-6 transition-all duration-300 open:bg-amber-50 esconder" data-anim="apareceresq">
                 <summary class="flex justify-between items-center font-bold text-gray-800 list-none cursor-pointer">
                     <span class="flex items-center gap-3">
                         <i class="fa-solid fa-truck-ramp-box text-amber-500"></i>
